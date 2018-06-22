@@ -53,6 +53,6 @@ function placeOrder(cardNumber) {
   } else {
     var sum = total();
     var cart = [];
-    return `Your total cost is $${sum}, whch will be charged to card ${cardNumber}.`;
+    return `Your total cost is $${sum}, which will be charged to the card ${cardNumber}.`;
   }
 }
