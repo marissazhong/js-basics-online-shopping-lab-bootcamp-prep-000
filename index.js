@@ -38,7 +38,10 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if 
+  if (item in cart) {
+    delete cart.
+  }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
