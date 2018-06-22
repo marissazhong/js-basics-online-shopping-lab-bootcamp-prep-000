@@ -24,6 +24,7 @@ function viewCart() {
     }
     result += cart[-1].itemName + ' at $' + cart[-1].itemPrice + '.';
   }
+  return result;
 }
 
 function total() {
