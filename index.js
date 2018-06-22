@@ -18,13 +18,12 @@ function viewCart() {
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
   } else {
-    
+    result = 'In your cart, you have ';
+    for (let i = 0; i < cart.length-1; i++) {
+      result += cart[i].itemName + ' at $' + cart[i].itemPrice + ', '
+    }
+    result += cart[-1].itemName + ' at $' + cart[-1].itemPrice + '.';
   }
-  result = 'In your cart, you have ';
-  for (let i = 0; i < cart.length-1; i++) {
-    result += cart[i].itemName + ' at $' + cart[i].itemPrice + ', '
-  }
-  result += cart[-1].itemName + ' at $' + cart[-1].itemPrice + '.';
 }
 
 function total() {
