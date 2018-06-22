@@ -38,10 +38,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (item in cart) {
-    delete cart.
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].itemName === item) {
+      
+    }
   }
-  return cart;
 }
 
 function placeOrder(cardNumber) {
